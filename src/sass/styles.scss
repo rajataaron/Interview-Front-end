@@ -1,5 +1,8 @@
-@import 'config/**/*.scss';
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 html {
   height: 100%;
   font-size: 16px;
@@ -8,4 +11,56 @@ html {
 body {
   font-size: 100%;
   display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+::placeholder {
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@import 'config/**/*.scss';
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (max-width: 576px) {
+  .container-hero {
+    padding: 1em;
+  }
+  .header-logo {
+    & h2 {
+      font-size: 16px;
+      margin: 15px 0px;
+    }
+  }
+  .about {
+    &-card {
+      text-align: left;
+      margin: 8px 0px;
+      padding: 15px 20px;
+      & img {
+        display: inline-block;
+        width: 40px;
+      }
+      & h3 {
+        display: inline-block;
+        margin: 10px 20px;
+      }
+    }
+  }
+  .contact {
+    padding: 3em 1em;
+  }
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right {
+    text-align: center;
+    margin-top: 10px;
+  }
 }

@@ -1,0 +1,85 @@
+.testimonial {
+  padding: 4em 0em;
+  background: #f8f6f7;
+  &-header {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    & h2 {
+      font-weight: 800;
+      color: #494441;
+    }
+  }
+  &-comment {
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 2px 4px #3d3d3d;
+    border-radius: 12px;
+    & h3 {
+      font-size: 18px;
+      font-style: italic;
+      & span {
+        color: #ef3b00;
+        font-size: 30px;
+        font-weight: 800;
+      }
+    }
+  }
+  &-client {
+    margin: 20px;
+    & img {
+      width: 55px;
+      display: inline-block;
+      vertical-align: baseline;
+    }
+    &-info {
+      display: inline-block;
+      margin: 0px 10px;
+      vertical-align: super;
+      & h3 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #48433f;
+        margin-bottom: 2px;
+      }
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+$font-primary: #3d3d3d;
+.card {
+  margin: 0 auto;
+  .carousel-item {
+    height: 200px;
+  }
+  .carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    color: $font-primary;
+    h3 {
+      color: $font-primary;
+    }
+    p {
+      line-height: 30px;
+    }
+    .col-sm-3 {
+      display: flex;
+      align-items: center;
+    }
+    .col-sm-9 {
+      text-align: left;
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: $font-primary !important;
+    opacity: 1 !important;
+  }
+}

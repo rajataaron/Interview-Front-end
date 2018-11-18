@@ -1,0 +1,132 @@
+.container {
+  max-width: 1240px;
+  padding: 0px 15px;
+  &-hero {
+    background-image: url(../img/hero-img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 5em;
+  }
+}
+.about {
+  &-content {
+    padding: 8em 0em;
+  }
+  &-heading {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+  }
+  &-card {
+    text-align: center;
+    color: #fff;
+    border: 0.1px solid #484340;
+    margin: 0px 10px;
+    padding: 35px;
+    border-radius: 8px;
+    & h3 {
+      font-size: 18px;
+      margin: 15px 0px;
+    }
+  }
+  &-scroll {
+    text-align: center;
+    bottom: 2em;
+    position: absolute;
+    color: #81726f;
+    & p {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+.profile {
+  padding: 4em 0em;
+  background: #f8f6f7;
+  &-info {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    & h2 {
+      font-weight: 800;
+      color: #494441;
+    }
+  }
+  &-img-card {
+    background: #817370;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    padding: 4em;
+    text-align: center;
+    min-width: 275px;
+  }
+  &-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0px 5px;
+  }
+  &-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #80736d;
+  }
+}
+.profile-section {
+  padding: 7em 0em;
+  &-text {
+    text-align: left;
+    & h2 {
+      font-weight: 800;
+      color: #494441;
+      margin: 15px 0px;
+    }
+  }
+}
+
+.contact {
+  background-image: url(../img/contact-hero.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5em;
+  &-section {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    & h2 {
+      font-weight: 700;
+    }
+    & p {
+      font-size: 24px;
+    }
+  }
+  &-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 0px 10px;
+    &-textbox {
+      width: 100%;
+      height: 140px;
+      border-radius: 5px;
+      margin: 15px 0px;
+      padding: 10px;
+    }
+  }
+  &-btn {
+    margin: 30px auto;
+    background: #ef3b00;
+    color: #ffffff;
+    padding: 12px 37px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    &:hover {
+      background: #c03406;
+    }
+  }
+}
